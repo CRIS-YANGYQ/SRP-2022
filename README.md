@@ -1,10 +1,28 @@
 # SRP_app
-South China University of Technology
-Future Tech. School
-SRP program
-Application
+- South China University of Technology
+- Future Tech. School
+- SRP program
+- Application
 
-华南理工大学
-未来技术学院
-SRP项目
-App应用
+# SRP 项目
+- 华南理工大学
+- 未来技术学院
+- SRP项目：生物特征识别
+- App应用
+## APP功能
+- 源码：Vibrator3
+- 压缩包：Vibrator.apk
+- 目的：在手机振动时，进行安卓手机高频IMU数据采集，包含三维线加速度以及三维角加速度
+- 采集方法：1.点击小人按钮即可开始振动，随后进行静态/动态数据采集 2.打开“识别抬起动作”功能，在手机未振动的情况下，检测到手机抬起便开始振动；若手机已在振动，则保持原有计划继续振动。
+- 文件存储：采集csv格式存储数据，包含时间戳，以及6维IMU数据
+- 文件传输：1.唤醒手机微信，传输指定csv文件；2.选择多个指定csv文件，压缩为zip文件后，唤醒手机微信，传输指定zip文件
+- 其他功能：可动态显示手机振动时长；可设置不同振动模式（持续震动or间歇振动）；可设置最长振动时间
+- 强制中止振动：点击“华南理工大学”校徽按钮即可停止振动
+### 成员
+- 靳战鹏
+- 高杨
+- 杨裕钦
+- 陈耀仕
+- 詹振荣
+- 郑想
+- 周彦孜
