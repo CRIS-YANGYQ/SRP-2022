@@ -3,6 +3,23 @@
 - Future Tech. School
 - SRP program
 - Application
+## APP function
+- Source: Vibrator3
+- Compressed package: Vibrater.apk
+- Objective: To collect high-frequency IMU data of Android mobile phone during mobile phone vibrating, including three-dimensional linear acceleration and three-dimensional angular acceleration
+- Collection method: 1. Click the little man button to start vibrating, and then carry on the experiment of data collection,whether static or dynamic motion 2. Click the "识别抬起动作" button. When the mobile phone is not vibrating, it will start to vibrate when it is detected that the mobile phone is lifting; Conversely,if the phone has been already vibrating,it will keep the initiative plan and continue vibrating until the time runs out.
+- File storage: Collect and store data in csv format, including time stamps and 6-dimensional IMU data(linear and angular)
+- File transfer: 1. Wake up the app Wechat and transfer the specific csv file; 2. Select multiple specified csv files,then compress them into zip files, wake up wechat and transfer the target zip file/
+- Other functions: 1.Dynamically display of mobile phone vibration time; 2.Different vibration patterns can be set (continuous vibration or intermittent vibration); The maximum vibration time can be set.
+- Pre-interruption of vibration: Click the "South China University of Technology" badge button to stop the vibration directly.
+### Members
+- Zhanpeng Jin
+- Yang Gao
+- Yuqin Yang
+- Yaoshi Chen
+- Zhenrong Zhan
+- Xiang Zheng 
+- Yanzi Zhou
 
 # SRP 项目
 - 华南理工大学
