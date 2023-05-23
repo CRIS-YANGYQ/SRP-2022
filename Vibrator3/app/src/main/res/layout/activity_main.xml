@@ -8,6 +8,19 @@
     tools:context=".MainActivity">
 
 
+    <CheckBox
+        android:id="@+id/cb_novib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="是否不震动仅记录数据"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.154" />
+
     <EditText
         android:id="@+id/et_vibTime"
         android:layout_width="110dp"
@@ -17,14 +30,13 @@
         android:drawablePadding="10dp"
         android:hint="@string/hint1"
         android:inputType="number"
-        android:text="@string/_1000"
-        android:textSize="16sp"
+        android:text="@string/_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.060"
+        app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
+        app:layout_constraintVertical_bias="0.319" />
 
     <EditText
         android:id="@+id/et_interval"
@@ -35,14 +47,13 @@
         android:hint="@string/hint2"
         android:importantForAutofill="no"
         android:inputType="number"
-        android:text="@string/_1"
-        android:textSize="16sp"
+        android:text="@string/_1000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
+        app:layout_constraintVertical_bias="0.319" />
 
     <EditText
         android:id="@+id/et_maxTime"
@@ -52,15 +63,14 @@
         android:drawableStart="@drawable/ic_baseline_clock"
         android:drawablePadding="10dp"
         android:hint="@string/hint3"
-        android:textSize="16sp"
         android:inputType="number"
-        android:text="@string/_1000"
+        android:text="@string/_15000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.940"
+        app:layout_constraintHorizontal_bias="0.946"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
+        app:layout_constraintVertical_bias="0.319" />
 
     <Button
         android:id="@+id/btn1"
@@ -79,28 +89,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="打开抬起识别"
-        android:textSize="14dp"
         android:textColor="#2dabd4"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.175" />
+        app:layout_constraintVertical_bias="0.218" />
 
     <Button
         android:id="@+id/btn8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="关闭抬起识别"
-        android:textSize="14dp"
         android:textColor="#2dabd4"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintHorizontal_bias="0.808"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.175" />
+        app:layout_constraintVertical_bias="0.218" />
 
     <Button
         android:id="@+id/btn2"
@@ -226,14 +236,14 @@
         app:layout_constraintEnd_toEndOf="@+id/gyroy"
         app:layout_constraintTop_toTopOf="@+id/accz" />
 
-    <!--    <TextView-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Hello World!"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
         android:id="@+id/text_vibrating"
@@ -271,257 +281,3 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.404" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-
-<!--    tools:context=".MainActivity">-->
-
-
-
-<!--    <Button-->
-<!--        android:id="@+id/btn1"-->
-<!--        android:layout_width="80dp"-->
-<!--        android:layout_height="80dp"-->
-<!--        android:background="@drawable/btn1_selector"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.024" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn7"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="打开抬起识别"-->
-<!--        android:textSize="14dp"-->
-<!--        android:textColor="#2dabd4"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.181"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.175" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn8"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="关闭抬起识别"-->
-<!--        android:textSize="14dp"-->
-<!--        android:textColor="#2dabd4"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.801"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.175" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/et1"-->
-<!--        android:layout_width="150dp"-->
-<!--        android:layout_height="80dp"-->
-<!--        android:autofillHints=""-->
-<!--        android:drawableStart="@drawable/ic_baseline_clock"-->
-<!--        android:drawablePadding="10dp"-->
-<!--        android:hint="@string/hint1"-->
-<!--        android:inputType="number"-->
-<!--        android:text="@string/_500"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.214"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.296" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/et2"-->
-<!--        android:layout_width="150dp"-->
-<!--        android:layout_height="80dp"-->
-<!--        android:drawableStart="@drawable/ic_baseline_clock"-->
-<!--        android:drawablePadding="10dp"-->
-<!--        android:hint="@string/hint2"-->
-<!--        android:importantForAutofill="no"-->
-<!--        android:inputType="number"-->
-<!--        android:text="@string/_1000"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.816"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.296" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn2"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="分享最新文件至微信"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.449" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn5"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="分享批量文件至微信"-->
-<!--        android:textColor="@color/purple_200"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.609" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn3"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="分享指定文件至微信"-->
-<!--        android:textColor="#5959AB"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.498"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.528" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn6"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="清空ZIP文件"-->
-<!--        android:textSize="14sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.845"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.68" />-->
-
-<!--    <Button-->
-<!--        android:id="@+id/btn4"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="清空CSV文件"-->
-<!--        android:textSize="14sp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.184"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.68" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/accx"-->
-<!--        android:layout_width="180dp"-->
-<!--        android:layout_height="25dp"-->
-<!--        android:text="@string/accx"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/gyrox"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.747" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/accz"-->
-<!--        android:layout_width="180dp"-->
-<!--        android:layout_height="25dp"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:text="@string/accz"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/accx"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.949" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/accy"-->
-<!--        android:layout_width="180dp"-->
-<!--        android:layout_height="25dp"-->
-<!--        android:layout_marginStart="4dp"-->
-<!--        android:text="@string/accy"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="@+id/accx"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.848" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/gyrox"-->
-<!--        android:layout_width="180dp"-->
-<!--        android:layout_height="25dp"-->
-<!--        android:text="@string/gyrox"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1.05"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/accx" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/gyroy"-->
-<!--        android:layout_width="180dp"-->
-<!--        android:layout_height="25dp"-->
-<!--        android:text="@string/gyroy"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/gyrox"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/accy" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/gyroz"-->
-<!--        android:layout_width="180dp"-->
-<!--        android:layout_height="25dp"-->
-<!--        android:text="@string/gyroz"-->
-<!--        app:layout_constraintEnd_toEndOf="@+id/gyroy"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/accz" />-->
-
-<!--&lt;!&ndash;    <TextView&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:text="Hello World!"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        app:layout_constraintTop_toTopOf="parent" />&ndash;&gt;-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/text_vibrating"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text=""-->
-<!--        android:textSize="10sp"-->
-<!--        app:layout_constraintVertical_bias="0.15"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-<!--    <TextView-->
-<!--        android:id="@+id/text_detectingRaison"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text=""-->
-<!--        android:textColor="#2dabd4"-->
-<!--        app:layout_constraintVertical_bias="0.24"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/text_vibrationTimeText"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text=""-->
-<!--        android:textColor="#2dabd4"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.501"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.404" />-->
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

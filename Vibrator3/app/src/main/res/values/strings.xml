@@ -1,17 +1,16 @@
 <resources>
     <string name="app_name">Vibrator-Alpha</string>
     <string name="accy">accy:</string>
-    <string name="_1">1</string>
     <string name="_1000">1000</string>
-    <string name="_15000">15000</string>
     <string name="hint1">请输入每次振动时长（ms）</string>
     <string name="hint2">请输入振动间隔时长（ms）</string>
-    <string name="hint3">请输入振动总时长（ms）</string>
     <string name="accx">accx:</string>
     <string name="gyrox">gyrox:</string>
     <string name="accz">accz:</string>
     <string name="gyroy">gyroy</string>
     <string name="gyroz">gyroz</string>
     <string name="_500">500</string>
+    <string name="hint3">最长振动时间（ms）</string>
+    <string name="_15000">15000</string>
 
 </resources>
